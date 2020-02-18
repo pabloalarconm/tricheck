@@ -6,7 +6,7 @@
 def tricheck(s,p,o,g):
     
     
-    if str(type(s)) == "rdflib.term.URIRef":
+    if str(type(s)) == "<class 'rdflib.term.URIRef'>":
         pass
     else: 
         s_uri=re.match(r"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+",s)
@@ -14,10 +14,10 @@ def tricheck(s,p,o,g):
             s_uri = URIRef(str(s))
             s = s_uri
         else:
-            sys.exit("Error:Subject {} must be a URI-compatible".format(str(s)))
+            sys.exit("Error:Subject {} must be URI-compatible".format(str(s)))
 
 
-    if str(type(p)) == "rdflib.term.URIRef":
+    if str(type(p)) == "<class 'rdflib.term.URIRef'>":
         pass
     else: 
         p_uri=re.match(r"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+",p)
@@ -25,7 +25,7 @@ def tricheck(s,p,o,g):
             p_uri = URIRef(str(p))
             p = p_uri
         else:
-            sys.exit("Error:Predicate {} must be a URI-compatible".format(str(p)))
+            sys.exit("Error:Predicate {} must be URI-compatible".format(str(p)))
     
 
 
