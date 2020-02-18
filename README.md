@@ -1,5 +1,5 @@
 # Tricheck
-##Triplets serializer and check filter to work with RDF information.  
+## Triplets serializer and check filter to work with RDF information.  
 
 ```
 
