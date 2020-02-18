@@ -64,6 +64,6 @@ def tricheck(s,p,o,g):
 #rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 #trial = URIRef("https://github.com/pabloalarconm/tricheck")
 #g = Graph()
-#tricheck(trial,rdfs.label,"This is a label",g2)
-#print(g2.serialize(format='turtle'))
+#tricheck(trial,rdfs.label,"This is a label",g)
+#print(g.serialize(format='turtle'))
     
