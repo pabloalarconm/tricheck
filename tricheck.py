@@ -1,7 +1,3 @@
-from rdflib import URIRef, Literal, Namespace, XSD
-import re
-import sys
-
 
 def tricheck(s,p,o,g):
     
@@ -58,12 +54,3 @@ def tricheck(s,p,o,g):
 
     g.add([s,p,o])
 
-
-## Short mock for trials:
-
-#rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#")
-#trial = URIRef("https://github.com/pabloalarconm/tricheck")
-#g = Graph()
-#tricheck(trial,rdfs.label,"This is a label",g)
-#print(g.serialize(format='turtle'))
-    
