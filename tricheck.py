@@ -1,4 +1,4 @@
-from rdflib import URIRef, Literal, Namespace
+from rdflib import URIRef, Literal, Namespace, XSD
 import re
 import sys
 
