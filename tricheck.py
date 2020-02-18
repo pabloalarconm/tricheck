@@ -1,4 +1,6 @@
 
+
+
 def tricheck(s,p,o,g):
     
     
