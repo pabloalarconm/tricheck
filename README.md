@@ -1,6 +1,7 @@
 # Tricheck
-## Triplets serializer and check filter to work with RDF data.  
+## Triplets serializer and check filter to work with RDF data.
 
+```
 from rdflib import Graph,URIRef, Literal
 import sys
 import re
@@ -22,7 +23,7 @@ def triplipy(s,p,o,g):
         sys.exit("Multiple word string cant be a Subject")
     else:
         sys.exit("Not matchable Subject")
-        
+
     #Predicate:
     p.strip()
     pp=p.split()
@@ -63,6 +64,7 @@ def triplipy(s,p,o,g):
         o = Literal(str(o),lang='en')
         
     g.add([s,p,o])
+```
 
 
 ## Short Mock for trials:
