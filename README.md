@@ -1,7 +1,7 @@
 # Triplipy
 ## Triplets serializer and check filter to work with RDF data.
 
-```
+```python
 from rdflib import Graph,URIRef, Literal
 import sys
 import re
@@ -69,7 +69,7 @@ def triplipy(s,p,o,g):
 
 ## Short Mock for trials:
 
-```
+```python
 from rdflib import Graph,URIRef, Literal,Namespace
 import sys
 import re
